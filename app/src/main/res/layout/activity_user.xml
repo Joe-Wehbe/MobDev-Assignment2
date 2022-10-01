@@ -4,88 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".userActivity"
+    tools:context=".UserActivity"
     android:background="@drawable/user_background">
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="205dp"
-        android:layout_height="169dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="342dp"
         android:layout_height="57dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
         android:text="Enter your name to get started"
         android:textColor="#6C5C5C"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/nameInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
         android:drawableLeft="@drawable/personicon"
         android:ems="10"
         android:hint="  Name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="245dp"
         android:layout_height="53dp"
+        android:layout_marginTop="96dp"
         android:text="Stay up-to-date with the latest news in Lebanon!"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintHorizontal_bias="0.62"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/checkNewsButton"
         android:layout_width="141dp"
         android:layout_height="49dp"
-        android:backgroundTint="#05AA2E"
+        android:backgroundTint="#C61111"
         android:onClick="checkNews"
         android:text="Check News"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameInput"
         app:layout_constraintVertical_bias="0.117" />
 
     <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="198dp"
-        android:layout_height="131dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView2"
+        android:layout_width="169dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkNewsButton"
-        app:layout_constraintVertical_bias="0.691"
-        app:srcCompat="@drawable/img" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
