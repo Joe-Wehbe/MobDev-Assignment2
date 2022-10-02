@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddingActivity">
+    tools:context=".AddingActivity"
+    android:background="@drawable/background">
 
     <EditText
         android:id="@+id/titleInput"
@@ -20,7 +21,7 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintVertical_bias="0.194" />
 
     <EditText
         android:id="@+id/authorInput"
@@ -57,8 +58,8 @@
         android:id="@+id/toAdd"
         android:layout_width="271dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="172dp"
-        android:backgroundTint="#8A8080"
+        android:layout_marginBottom="216dp"
+        android:backgroundTint="#D62222"
         android:onClick="addItem"
         android:text="Add"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -87,9 +88,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/titleInput"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.833"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
+        app:layout_constraintVertical_bias="0.764" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
