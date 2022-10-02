@@ -37,7 +37,7 @@ public class NewsActivity extends AppCompatActivity {
 
             db = this.openOrCreateDatabase("newsdb", MODE_PRIVATE, null);
 
-            db.execSQL("CREATE TABLE IF NOT EXISTS articles (author VARCHAR(255), title VARCHAR(255), description TEXT, location VARCHAR(255))");
+            db.execSQL("CREATE TABLE IF NOT EXISTS articles (id int PRIMARY KEY AUTOINCREMENT, author VARCHAR(255), title VARCHAR(255), description TEXT, location VARCHAR(255))");
 
             Cursor c = db.rawQuery("SELECT description FROM articles", null);
             int descriptionIndex = c.getColumnIndex("description");
@@ -57,12 +57,9 @@ public class NewsActivity extends AppCompatActivity {
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, newsList);
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getApplicationContext(), InfoActivity.class);
-                startActivity(intent);
-            }
+        listView.setOnItemClickListener((adapterView, view, i, l) -> {
+            Intent intent = new Intent(getApplicationContext(), InfoActivity.class);
+            startActivity(intent);
         });
 
     }
