@@ -45,12 +45,20 @@ public class AddingActivity extends AppCompatActivity {
         author = ET_author.getText().toString();
         description = ET_description.getText().toString();
         location = ET_location.getText().toString();
-        NewsActivity.db.execSQL("INSERT INTO articles(author, title, description, location) VALUES ('"+author+"', '"+title+"', '"+description+"','"+location+"')");
 
-        Toast.makeText(getApplicationContext(), "Article Added", Toast.LENGTH_LONG).show();
+        if(!title.equals("") && !author.equals("") && !description.equals("") && !location.equals("")){
+            NewsActivity.db.execSQL("INSERT INTO articles(author, title, description, location) VALUES ('"+author+"', '"+title+"', '"+description+"','"+location+"')");
 
-        Intent i = new Intent(getApplicationContext(), NewsActivity.class);
-        startActivity(i);
+            Toast.makeText(getApplicationContext(), "Article Added", Toast.LENGTH_LONG).show();
+
+            Intent i = new Intent(getApplicationContext(), NewsActivity.class);
+            startActivity(i);
+        }else{
+            Toast.makeText(getApplicationContext(), "Missing information", Toast.LENGTH_LONG).show();
+
+        }
+
+
 
     }
 }

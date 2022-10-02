@@ -43,13 +43,17 @@ public class NewsActivity extends AppCompatActivity {
             int descriptionIndex = c.getColumnIndex("description");
             c.moveToFirst();
 
-            while (c != null){
-                String article = c.getString(descriptionIndex) + "\n";
+            if(c.getCount() == 0){
+                Toast.makeText(getApplicationContext(), "No Data", Toast.LENGTH_SHORT).show();
+            }else{
+                while (c != null){
+                    String article = c.getString(descriptionIndex) + "\n";
+                    newsList.add(article);
+                    c.moveToNext();
 
-                newsList.add(article);
-                c.moveToNext();
-
+                }
             }
+
 
         }catch(Exception e){
             e.printStackTrace();
