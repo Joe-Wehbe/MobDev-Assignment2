@@ -56,6 +56,7 @@ public class AddingActivity extends AppCompatActivity {
         }else{
             Toast.makeText(getApplicationContext(), "Missing information", Toast.LENGTH_LONG).show();
 
+
         }
 
 
