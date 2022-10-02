@@ -7,32 +7,89 @@
     tools:context=".AddingActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/titleInput"
+        android:layout_width="229dp"
+        android:layout_height="51dp"
+        android:backgroundTintMode="multiply"
         android:ems="10"
+        android:hint="Title"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="186dp" />
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/authorInput"
+        android:layout_width="227dp"
+        android:layout_height="57dp"
+        android:backgroundTintMode="multiply"
         android:ems="10"
+        android:hint="Author"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="242dp" />
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleInput"
+        app:layout_constraintVertical_bias="0.041" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/descriptionInput"
+        android:layout_width="226dp"
+        android:layout_height="55dp"
         android:ems="10"
+        android:hint="Description"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="310dp" />
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authorInput"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <Button
+        android:id="@+id/toAdd"
+        android:layout_width="271dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="172dp"
+        android:backgroundTint="#8A8080"
+        android:onClick="addItem"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/locationInput"
+        android:layout_width="227dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/toAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionInput"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="375dp"
+        android:layout_height="47dp"
+        android:text="Enter the following information"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titleInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,6 @@ public class UserActivity extends AppCompatActivity {
 
         Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.red)));
 
-
         name = findViewById(R.id.nameInput);
         newsBtn = findViewById(R.id.checkNewsButton);
         sp = getSharedPreferences("usernamePrefs", Context.MODE_PRIVATE);
