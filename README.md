@@ -9,7 +9,7 @@ Simple news app for lebanon.
 Users simply start by entering their username, which will be saved in the shared preferences of the application. After that, a list of news will be displayed, and users can add articles.
       
 # App Preview :iphone:
-![image](https://user-images.githubusercontent.com/102875229/209580206-ce25b7e8-47ef-4f62-a991-f890485a7ac9.png)
+![image](https://user-images.githubusercontent.com/102875229/209580367-9a79cfe9-0e6c-4cca-8d12-7c4083a99d97.png)
 ![image](https://user-images.githubusercontent.com/102875229/209580302-a59c12e9-09c8-4caa-85d9-a1f9569f24d7.png)
 
 
