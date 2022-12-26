@@ -12,6 +12,8 @@ Users simply start by entering their username, which will be saved in the shared
 ![image](https://user-images.githubusercontent.com/102875229/209580367-9a79cfe9-0e6c-4cca-8d12-7c4083a99d97.png)
 ![image](https://user-images.githubusercontent.com/102875229/209580302-a59c12e9-09c8-4caa-85d9-a1f9569f24d7.png)
 ![image](https://user-images.githubusercontent.com/102875229/209580549-65ef09af-cf12-448c-a8c1-fa8aeb4789e2.png)
+![image](https://user-images.githubusercontent.com/102875229/209580935-7c796381-699c-4e19-bdc1-101c39365a12.png)
+![image](https://user-images.githubusercontent.com/102875229/209580995-ba8cd9c5-a410-4efe-ace7-17eca7afa8f6.png)
 
 # Stacks :books:
 <img src="https://img.shields.io/badge/-java-5382a1?logo=&logoColor=white&style=for-the-badge" ></img>
