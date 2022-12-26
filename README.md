@@ -10,6 +10,8 @@ Users simply start by entering their username, which will be saved in the shared
       
 # App Preview :iphone:
 ![image](https://user-images.githubusercontent.com/102875229/209580206-ce25b7e8-47ef-4f62-a991-f890485a7ac9.png)
+![image](https://user-images.githubusercontent.com/102875229/209580302-a59c12e9-09c8-4caa-85d9-a1f9569f24d7.png)
+
 
 # Stacks :books:
 <img src="https://img.shields.io/badge/-java-5382a1?logo=&logoColor=white&style=for-the-badge" ></img>
