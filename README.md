@@ -13,7 +13,6 @@ Users simply start by entering their username, which will be saved in the shared
 ![image](https://user-images.githubusercontent.com/102875229/209580302-a59c12e9-09c8-4caa-85d9-a1f9569f24d7.png)
 ![image](https://user-images.githubusercontent.com/102875229/209580549-65ef09af-cf12-448c-a8c1-fa8aeb4789e2.png)
 
-
 # Stacks :books:
 <img src="https://img.shields.io/badge/-java-5382a1?logo=&logoColor=white&style=for-the-badge" ></img>
 <img src="https://img.shields.io/badge/-ANDROID%20STUDIO-3DDC84?logo=android-studio&logoColor=white&style=for-the-badge" ></img>
