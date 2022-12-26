@@ -1,7 +1,7 @@
 package com.example.newsapp;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
@@ -29,8 +29,9 @@ public class AddingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adding);
 
-        Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.red)));
+        getWindow().setStatusBarColor(ContextCompat.getColor(getApplicationContext(), R.color.black));
 
+        Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.red)));
 
         ET_title = findViewById(R.id.titleInput);
         ET_author = findViewById(R.id.authorInput);
@@ -56,10 +57,6 @@ public class AddingActivity extends AppCompatActivity {
         }else{
             Toast.makeText(getApplicationContext(), "Missing information", Toast.LENGTH_LONG).show();
 
-
         }
-
-
-
     }
 }

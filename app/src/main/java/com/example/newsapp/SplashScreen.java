@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -15,12 +16,11 @@ public class SplashScreen extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(SplashScreen.this, UserActivity.class));
-                finish();
-            }
+        getWindow().setStatusBarColor(ContextCompat.getColor(getApplicationContext(), R.color.black));
+
+        new Handler().postDelayed(() -> {
+            startActivity(new Intent(SplashScreen.this, UserActivity.class));
+            finish();
         }, 2500);
     }
 }

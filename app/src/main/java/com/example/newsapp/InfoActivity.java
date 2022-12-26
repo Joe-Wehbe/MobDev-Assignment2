@@ -1,6 +1,7 @@
 package com.example.newsapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
@@ -14,11 +15,12 @@ public class InfoActivity extends AppCompatActivity {
     TextView description;
     TextView information;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
+
+        getWindow().setStatusBarColor(ContextCompat.getColor(getApplicationContext(), R.color.black));
 
         Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable
                 (new ColorDrawable(getResources().getColor(R.color.red)));
@@ -32,14 +34,12 @@ public class InfoActivity extends AppCompatActivity {
         String titleInfo = intent.getStringExtra("titleTransfer");
         String locationInfo = intent.getStringExtra("locationTransfer");
 
-        String descriptionstr = descriptionInfo;
-        description.setText(descriptionstr);
+        description.setText(descriptionInfo);
 
         String info = "Author: " + authorInfo + "\n"
                     + "Title: " + titleInfo + "\n"
                     + "Location: " + locationInfo + "\n";
         information.setText(info);
-
 
     }
 }
