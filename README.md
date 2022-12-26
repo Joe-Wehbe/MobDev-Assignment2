@@ -1,4 +1,4 @@
-# MyCar :car:
+# NewsApp :lebanon:
 Simple news app for lebanon. 
 
 # Contributors :raising_hand_man:
